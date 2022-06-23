@@ -92,6 +92,7 @@ abstract class CompoundParameterCollection implements IteratorAggregate
      * @internal
      * @inheritDoc
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator($this->items);
