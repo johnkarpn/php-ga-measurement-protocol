@@ -37,7 +37,7 @@ class AnalyticsResponseTest extends TestCase
 
         $mockResponse->expects($this->atLeast(1))
             ->method('getStatusCode')
-            ->will($this->returnValue('200'));
+            ->will($this->returnValue(200));
 
         $invalidBodyMock = $this->getMockBuilder('Psr\Http\Message\StreamInterface')
             ->disableOriginalConstructor()
@@ -77,7 +77,7 @@ class AnalyticsResponseTest extends TestCase
 
         $mockDebugResponse->expects($this->atLeast(1))
             ->method('getStatusCode')
-            ->will($this->returnValue('200'));
+            ->will($this->returnValue(200));
 
         $bodyMock = $this->getMockBuilder('Psr\Http\Message\StreamInterface')
             ->disableOriginalConstructor()
