@@ -14,11 +14,11 @@
         }
     ],
     "require": {
-        "php": "^7",
+        "php": "^7.1",
         "guzzlehttp/guzzle": "^6.0 || ^7.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6",
+        "phpunit/phpunit": "^7",
         "satooshi/php-coveralls": "1.0.1"
     },
     "autoload": {
