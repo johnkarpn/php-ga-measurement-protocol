@@ -1,6 +1,7 @@
+/vendor/*
+/coverage/*
+/build/*
 composer.lock
-vendor/*
-coverage/*
 composer.phar
 phpunit.xml
 .phpunit.result.cache
