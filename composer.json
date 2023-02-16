@@ -28,5 +28,8 @@
     },
     "replace": {
         "theiconic/php-ga-measurement-protocol": "*"
+    },
+    "scripts": {
+        "test": "phpunit --coverage-html=coverage"
     }
 }
