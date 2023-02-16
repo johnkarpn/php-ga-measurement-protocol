@@ -38,7 +38,7 @@ class HttpClientTest extends TestCase
         $guzzleClient->expects($this->never())->method('sendAsync');
         $this->httpClient->setClient($guzzleClient);
 
-        $this->setExpectedException(\UnexpectedValueException::class, $exceptionMessage);
+        $this->expectException(\UnexpectedValueException::class, $exceptionMessage);
 
         $this->httpClient->post('http://test-collector.com/collect?v=1', $options);
     }
