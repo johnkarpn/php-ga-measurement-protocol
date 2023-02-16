@@ -3,9 +3,10 @@
 namespace TheIconic\Tracking\GoogleAnalytics;
 
 use GuzzleHttp\Psr7\Uri;
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 
-class AnalyticsResponseTest extends \PHPUnit_Framework_TestCase
+class AnalyticsResponseTest extends TestCase
 {
     /**
      * @var AnalyticsResponse

@@ -2,9 +2,10 @@
 
 namespace TheIconic\Tracking\GoogleAnalytics\Network;
 
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 
-class HttpClientTest extends \PHPUnit_Framework_TestCase
+class HttpClientTest extends TestCase
 {
     /**
      * @var HttpClient

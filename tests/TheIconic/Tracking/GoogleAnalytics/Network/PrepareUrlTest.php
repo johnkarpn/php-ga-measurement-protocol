@@ -2,6 +2,8 @@
 
 namespace TheIconic\Tracking\GoogleAnalytics\Network;
 
+use PHPUnit\Framework\TestCase;
+
 use TheIconic\Tracking\GoogleAnalytics\Network\PrepareUrl;
 use TheIconic\Tracking\GoogleAnalytics\Parameters\General\CacheBuster;
 use TheIconic\Tracking\GoogleAnalytics\Tests\CompoundParameterTestCollection;
@@ -9,7 +11,7 @@ use TheIconic\Tracking\GoogleAnalytics\Tests\CompoundTestParameter;
 use TheIconic\Tracking\GoogleAnalytics\Tests\SingleTestParameter;
 use TheIconic\Tracking\GoogleAnalytics\Tests\SingleTestParameterIndexed;
 
-class PrepareUrlTest extends \PHPUnit_Framework_TestCase
+class PrepareUrlTest extends TestCase
 {
     public function testBuild()
     {

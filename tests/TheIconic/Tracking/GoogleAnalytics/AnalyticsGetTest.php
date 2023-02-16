@@ -6,7 +6,10 @@ namespace TheIconic\Tracking\GoogleAnalytics;
  * Class AnalyticsGetTest
  * @package TheIconic\Tracking\GoogleAnalytics
  */
-class AnalyticsGetTest extends \PHPUnit_Framework_TestCase
+
+use PHPUnit\Framework\TestCase;
+
+class AnalyticsGetTest extends TestCase
 {
     /**
      * @var Analytics

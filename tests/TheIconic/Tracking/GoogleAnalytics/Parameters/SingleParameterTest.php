@@ -2,11 +2,12 @@
 
 namespace TheIconic\Tracking\GoogleAnalytics\Parameters;
 
+use PHPUnit\Framework\TestCase;
 use TheIconic\Tracking\GoogleAnalytics\Tests\SingleTestParameter;
 use TheIconic\Tracking\GoogleAnalytics\Tests\SingleTestParameterIndexed;
 use TheIconic\Tracking\GoogleAnalytics\Tests\InvalidSingleTestParameter;
 
-class SingleParameterTest extends \PHPUnit_Framework_TestCase
+class SingleParameterTest extends TestCase
 {
     /**
      * @var SingleParameter

@@ -2,9 +2,10 @@
 
 namespace TheIconic\Tracking\GoogleAnalytics\Parameters;
 
+use PHPUnit\Framework\TestCase;
 use TheIconic\Tracking\GoogleAnalytics\Tests\CompoundTestParameter;
 
-class CompoundParameterTest extends \PHPUnit_Framework_TestCase
+class CompoundParameterTest extends TestCase
 {
     /**
      * @var CompoundParameter
