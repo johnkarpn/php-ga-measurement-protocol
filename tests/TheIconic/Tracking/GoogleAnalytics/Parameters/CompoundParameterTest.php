@@ -12,7 +12,7 @@ class CompoundParameterTest extends TestCase
      */
     private $compoundParameter;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->compoundParameter = new CompoundTestParameter(['sku' => 5, 'name' => 'hello', 'dimension_3' => 'yep']);
     }
@@ -29,18 +29,20 @@ class CompoundParameterTest extends TestCase
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidCompoundParameterException
      */
     public function testRequiredCompundParameter()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidCompoundParameterException::class);
+
         (new CompoundTestParameter(['sku' => 5]));
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testInvalidDataCompundParameter()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         (new CompoundTestParameter(['sku' => 5, 'name' => 'hello', 'dimensions_3' => 'yep']));
     }
 }

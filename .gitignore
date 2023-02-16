@@ -3,6 +3,7 @@ vendor/*
 coverage/*
 composer.phar
 phpunit.xml
+.phpunit.result.cache
 .idea
 Gemfile
 Gemfile.lock

@@ -22,7 +22,7 @@ class AnalyticsGetTest extends TestCase
     private $analyticsSsl;
 
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->analytics = new Analytics();
         $this->analyticsSsl = new Analytics(true);
@@ -74,19 +74,21 @@ class AnalyticsGetTest extends TestCase
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testGetInvalidParameter()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics
             ->getNonExistant();
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException
      */
     public function testGetInvalidIndexedParameter()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException::class);
+
         $analytics = $this->analytics
             ->setProductImpressionListName('list name', 1)
             ->setProductImpressionListName('list test', 2);

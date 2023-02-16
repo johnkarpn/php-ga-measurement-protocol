@@ -42,25 +42,27 @@ class AnalyticsTest extends TestCase
      */
     private $analyticsSsl;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->analytics = new Analytics();
         $this->analyticsSsl = new Analytics(true);
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testInvalidClassInitialization()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         (new Analytics('1'));
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testInvalidClassInitialization2()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         (new Analytics(false, '1'));
     }
 
@@ -94,19 +96,21 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testSetInvalidParameterValue()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         $this->analytics
             ->setProtocolVersion();
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testSetInvalidParameter()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics
             ->setNonExistant('1');
     }
@@ -145,19 +149,21 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testAddNonExistant()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics
             ->addNonExistant('1');
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testSetInvalidAddValue()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         $this->analytics
             ->addProduct();
     }
@@ -181,10 +187,11 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testSetInvalidProductAction()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics->setProductActionToPurchae();
     }
 
@@ -378,10 +385,11 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\EnqueueUrlsOverflowException
      */
     public function testEnqueueOverflowException()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\EnqueueUrlsOverflowException::class);
+
         $this->analytics
             ->setDebug(true)
             ->setProtocolVersion('1')
@@ -549,10 +557,11 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException
      */
     public function testInvalidContentGroupIndex()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException::class);
+
         $this->analytics
             ->setContentGroup('group', 6);
     }
@@ -660,18 +669,20 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException
      */
     public function testMinimumParametersForSendHit()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException::class);
+
         $this->analytics->sendPageview();
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException
      */
     public function testMinimumParametersForSendHitMissingClientIdAndUserId()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException::class);
+
         $this->analytics
             ->setProtocolVersion('1')
             ->setTrackingId('UA-26293424-11')
@@ -723,18 +734,20 @@ class AnalyticsTest extends TestCase
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testSetInvalidSendHit()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics->sendPageviw();
     }
 
     /**
-     * @expectedException \BadMethodCallException
      */
     public function testInvalidMethodCall()
     {
+        $this->expectException(\BadMethodCallException::class);
+
         $this->analytics
             ->iDontExists();
     }

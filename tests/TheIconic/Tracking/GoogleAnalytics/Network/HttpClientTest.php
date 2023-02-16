@@ -17,7 +17,7 @@ class HttpClientTest extends TestCase
      */
     private $mockHttpClient;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->httpClient = new HttpClient();
     }

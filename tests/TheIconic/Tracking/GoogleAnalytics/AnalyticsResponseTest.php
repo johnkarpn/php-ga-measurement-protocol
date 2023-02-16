@@ -28,7 +28,7 @@ class AnalyticsResponseTest extends TestCase
      */
     private $mockRequest;
 
-    public function setUp()
+    public function setUp() : void
     {
         $mockResponse = $this->getMockBuilder('GuzzleHttp\Psr7\Response')
             ->setMethods(['getStatusCode', 'getBody'])
@@ -95,10 +95,11 @@ class AnalyticsResponseTest extends TestCase
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testConstructorWithWrongResponseValue()
     {
+        $this->expectException(\InvalidArgumentException::class);
+
         new AnalyticsResponse($this->mockRequest, new \stdClass());
     }
 

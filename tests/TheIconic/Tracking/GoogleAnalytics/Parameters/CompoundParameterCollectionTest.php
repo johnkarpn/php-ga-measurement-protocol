@@ -16,16 +16,17 @@ class CompoundParameterCollectionTest extends TestCase
      */
     protected $testCollection;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->testCollection = new CompoundParameterTestCollection(7);
     }
 
     /**
-     * @expectedException \TheIconic\Tracking\GoogleAnalytics\Exception\InvalidNameException
      */
     public function testInvalidCompoundParameterCollection()
     {
+        $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidNameException::class);
+
         (new InvalidCompoundParameterTestCollection());
     }
 
