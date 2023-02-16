@@ -25,5 +25,8 @@
         "psr-4": {
             "TheIconic\\Tracking\\GoogleAnalytics\\": "src/"
         }
+    },
+    "replace": {
+        "theiconic/php-ga-measurement-protocol": "*"
     }
 }
