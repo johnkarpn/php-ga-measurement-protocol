@@ -1,11 +1,12 @@
 <?php
 
-namespace TheIconic\Tracking\GoogleAnalytics;
-
 /**
  * Class AnalyticsGetTest
  * @package TheIconic\Tracking\GoogleAnalytics
  */
+
+namespace TheIconic\Tracking\GoogleAnalytics;
+
 
 use PHPUnit\Framework\TestCase;
 
