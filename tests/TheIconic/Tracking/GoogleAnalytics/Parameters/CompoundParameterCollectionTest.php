@@ -21,8 +21,6 @@ class CompoundParameterCollectionTest extends TestCase
         $this->testCollection = new CompoundParameterTestCollection(7);
     }
 
-    /**
-     */
     public function testInvalidCompoundParameterCollection()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidNameException::class);

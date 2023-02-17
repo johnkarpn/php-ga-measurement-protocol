@@ -77,8 +77,6 @@ class AnalyticsTest extends TestCase
         $this->assertInstanceOf('TheIconic\Tracking\GoogleAnalytics\Analytics', $response);
     }
 
-    /**
-     */
     public function testSetInvalidParameterValue()
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -87,8 +85,6 @@ class AnalyticsTest extends TestCase
             ->setProtocolVersion();
     }
 
-    /**
-     */
     public function testSetInvalidParameter()
     {
         $this->expectException(\BadMethodCallException::class);
@@ -130,8 +126,6 @@ class AnalyticsTest extends TestCase
         $this->assertInstanceOf('TheIconic\Tracking\GoogleAnalytics\Analytics', $response);
     }
 
-    /**
-     */
     public function testAddNonExistant()
     {
         $this->expectException(\BadMethodCallException::class);
@@ -140,8 +134,6 @@ class AnalyticsTest extends TestCase
             ->addNonExistant('1');
     }
 
-    /**
-     */
     public function testSetInvalidAddValue()
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -168,8 +160,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->setPromotionActionToView();
     }
 
-    /**
-     */
     public function testSetInvalidProductAction()
     {
         $this->expectException(\BadMethodCallException::class);
@@ -366,8 +356,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendEnqueuedHits();
     }
 
-    /**
-     */
     public function testEnqueueOverflowException()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\EnqueueUrlsOverflowException::class);
@@ -538,8 +526,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendPageview();
     }
 
-    /**
-     */
     public function testInvalidContentGroupIndex()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException::class);
@@ -650,8 +636,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendEvent();
     }
 
-    /**
-     */
     public function testMinimumParametersForSendHit()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException::class);
@@ -659,8 +643,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendPageview();
     }
 
-    /**
-     */
     public function testMinimumParametersForSendHitMissingClientIdAndUserId()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidPayloadDataException::class);
@@ -715,8 +697,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendPageview();
     }
 
-    /**
-     */
     public function testSetInvalidSendHit()
     {
         $this->expectException(\BadMethodCallException::class);
@@ -724,8 +704,6 @@ class AnalyticsTest extends TestCase
         $this->analytics->sendPageviw();
     }
 
-    /**
-     */
     public function testInvalidMethodCall()
     {
         $this->expectException(\BadMethodCallException::class);

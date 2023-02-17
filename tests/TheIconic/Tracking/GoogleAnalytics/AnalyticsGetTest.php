@@ -73,8 +73,6 @@ class AnalyticsGetTest extends TestCase
         $this->assertEquals(null, $analytics->getProductImpressionListName(2));
     }
 
-    /**
-     */
     public function testGetInvalidParameter()
     {
         $this->expectException(\BadMethodCallException::class);
@@ -83,8 +81,6 @@ class AnalyticsGetTest extends TestCase
             ->getNonExistant();
     }
 
-    /**
-     */
     public function testGetInvalidIndexedParameter()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException::class);

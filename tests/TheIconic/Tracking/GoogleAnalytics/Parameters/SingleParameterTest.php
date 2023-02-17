@@ -25,8 +25,6 @@ class SingleParameterTest extends TestCase
         $this->stubSingleParameterIndexed = new SingleTestParameterIndexed(2);
     }
 
-    /**
-     */
     public function testInvalidSingleParameter()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidNameException::class);
@@ -34,8 +32,6 @@ class SingleParameterTest extends TestCase
         (new InvalidSingleTestParameter);
     }
 
-    /**
-     */
     public function testInvalidSingleParameterIndexed()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidIndexException::class);

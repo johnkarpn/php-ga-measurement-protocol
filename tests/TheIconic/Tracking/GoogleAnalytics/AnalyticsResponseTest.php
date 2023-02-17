@@ -94,8 +94,6 @@ class AnalyticsResponseTest extends TestCase
         $this->analyticsDebugResponse = new AnalyticsResponse($this->mockRequest, $mockDebugResponse);
     }
 
-    /**
-     */
     public function testConstructorWithWrongResponseValue()
     {
         $this->expectException(\InvalidArgumentException::class);

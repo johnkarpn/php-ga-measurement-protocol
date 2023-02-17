@@ -28,8 +28,6 @@ class CompoundParameterTest extends TestCase
         $this->assertEquals($expect, $this->compoundParameter->getParameters());
     }
 
-    /**
-     */
     public function testRequiredCompundParameter()
     {
         $this->expectException(\TheIconic\Tracking\GoogleAnalytics\Exception\InvalidCompoundParameterException::class);
@@ -37,8 +35,6 @@ class CompoundParameterTest extends TestCase
         (new CompoundTestParameter(['sku' => 5]));
     }
 
-    /**
-     */
     public function testInvalidDataCompundParameter()
     {
         $this->expectException(\InvalidArgumentException::class);
