@@ -3,12 +3,11 @@ Google Analytics Measurement Protocol library for PHP
 
 This is a fork of the original no longer maintained project [https://github.com/theiconic/php-ga-measurement-protocol.git](https://github.com/theiconic/php-ga-measurement-protocol.git)
 
-[![Build Status](https://travis-ci.org/theiconic/php-ga-measurement-protocol.svg?branch=master)](https://travis-ci.org/theiconic/php-ga-measurement-protocol)
-[![Coverage Status](https://coveralls.io/repos/theiconic/php-ga-measurement-protocol/badge.svg?branch=master&service=github)](https://coveralls.io/github/theiconic/php-ga-measurement-protocol?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/theiconic/php-ga-measurement-protocol/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/theiconic/php-ga-measurement-protocol/?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/theiconic/php-ga-measurement-protocol/v/stable)](https://packagist.org/packages/theiconic/php-ga-measurement-protocol)
-[![Total Downloads](https://poser.pugx.org/theiconic/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/theiconic/php-ga-measurement-protocol)
-[![License](https://poser.pugx.org/theiconic/php-ga-measurement-protocol/license)](https://packagist.org/packages/theiconic/php-ga-measurement-protocol)
+[![Latest Stable Version](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/version)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/8ctopus/php-ga-measurement-protocol/ci.yaml?branch=master)
+[![Total Downloads](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![PHP Version Require](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/require/php)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![License](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/license.svg)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
 [![Documentation Status](https://readthedocs.org/projects/php-ga-measurement-protocol/badge/?version=latest)](http://php-ga-measurement-protocol.readthedocs.org/en/latest/)
 
 ## Description
