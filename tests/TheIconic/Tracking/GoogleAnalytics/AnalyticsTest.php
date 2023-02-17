@@ -48,24 +48,6 @@ class AnalyticsTest extends TestCase
         $this->analyticsSsl = new Analytics(true);
     }
 
-    /**
-     */
-    public function testInvalidClassInitialization()
-    {
-        $this->expectException(\InvalidArgumentException::class);
-
-        (new Analytics('1'));
-    }
-
-    /**
-     */
-    public function testInvalidClassInitialization2()
-    {
-        $this->expectException(\InvalidArgumentException::class);
-
-        (new Analytics(false, '1'));
-    }
-
     public function testHttpsEndpoint()
     {
         $sslAnalytics = new Analytics(true);

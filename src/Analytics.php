@@ -479,18 +479,9 @@ class Analytics
      * @param bool $isSsl
      * @param bool $isDisabled
      * @param array $options
-     * @throws \InvalidArgumentException
      */
-    public function __construct($isSsl = false, $isDisabled = false, array $options = [])
+    public function __construct(bool $isSsl = false, bool $isDisabled = false, array $options = [])
     {
-        if (!is_bool($isSsl)) {
-            throw new \InvalidArgumentException('First constructor argument "isSSL" must be boolean');
-        }
-
-        if (!is_bool($isDisabled)) {
-            throw new \InvalidArgumentException('Second constructor argument "isDisabled" must be boolean');
-        }
-
         if ($isSsl) {
             $this->uriScheme .= 's';
             $this->endpoint = str_replace('www', 'ssl', $this->endpoint);
