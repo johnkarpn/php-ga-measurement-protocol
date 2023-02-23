@@ -35,29 +35,10 @@ Send data to Google Analytics from the server using PHP. This library fully impl
 
 Use Composer to install this package.
 
-If you are using ```PHP 5.5 or above``` and ```Guzzle 6``` then:
-
-```json
-{
-    "require": {
-        "theiconic/php-ga-measurement-protocol": "^2.0"
-    }
-}
-```
-
-Or if you are using ```PHP 5.4 or above``` and ```Guzzle 5``` then:
-
-```json
-{
-    "require": {
-        "theiconic/php-ga-measurement-protocol": "^1.1"
-    }
-}
-```
-
-Take notice v1 is no longer maintained and lacks newer features (such as Debug and Hit validation), you are encourage to update to v2.
+    composer require 8ctopus/php-ga-measurement-protocol
 
 ## Integrations
+
 You can use this package on its own, or use a convenient framework integration:
 * Laravel 5+ - https://github.com/irazasyed/laravel-gamp
 * Yii 2 - https://github.com/baibaratsky/yii2-ga-measurement-protocol
@@ -66,6 +47,7 @@ You can use this package on its own, or use a convenient framework integration:
 Feel free to create an integration with your favourite framework, let us know so we list it here.
 
 ## Usage
+
 The required parameters for all hits are Protocol Version, Tracking ID and at least one of these: Client ID or User ID. Some optional ones like IP Override are recommended if you don't want all hits to seem like coming from your servers.
 ```php
 use TheIconic\Tracking\GoogleAnalytics\Analytics;
