@@ -1,4 +1,11 @@
 ## Version 2
+
+### 2.9.2 (2023-02-23)
+* php 8.2 compatibility
+
+### 2.9.1 (2022-06-23)
+* php 8.1 compatibility
+
 ### 2.9.0 (2020-09-25)
  * Adding batch hit feature, by @alberto-bottarini and @jorgeborges
 
