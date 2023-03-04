@@ -1,14 +1,18 @@
-/vendor/*
-/coverage/*
-/build/*
+# composer
 /composer.lock
-/composer.phar
+/vendor/*
+
+# phpunit
+/build/*
 /phpunit.xml
 /.phpunit.result.cache
+/coverage/*
+
+# other
 /.idea
 /Gemfile
 /Gemfile.lock
 /autotest.rb
 /Dockerfile
 /.php-cs-fixer.cache
-/php-ga-measurement-protocol.sublime-workspace
+/*.sublime-workspace
