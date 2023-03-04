@@ -7,7 +7,6 @@
 [![tests](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml/badge.svg)](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml)
 ![code coverage badge](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/coverage.svg)
 ![lines of code](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/lines.svg)
-Lex is a lightweight template parser.
 
 This is a fork of the original no longer maintained project [https://github.com/theiconic/php-ga-measurement-protocol.git](https://github.com/theiconic/php-ga-measurement-protocol.git). There are no plans to add support for Google Analytics 4, this package is maintenance only for php 8.x support.
 
