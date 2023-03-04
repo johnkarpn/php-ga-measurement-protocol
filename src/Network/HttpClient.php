@@ -152,7 +152,7 @@ class HttpClient
         ];
 
         $opts = [];
-        foreach ($defaultOptions as $option => $value) {
+        foreach (array_keys($defaultOptions) as $option) {
             $opts[$option] = isset($options[$option]) ? $options[$option] : $defaultOptions[$option];
         }
 

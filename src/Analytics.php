@@ -716,7 +716,7 @@ class Analytics
             't' => false,
         ];
 
-        foreach ($minimumRequiredParameters as $parameterName => $isParamPresent) {
+        foreach (array_keys($minimumRequiredParameters) as $parameterName) {
             if (array_key_exists($parameterName, $this->singleParameters)) {
                 $minimumRequiredParameters[$parameterName] = true;
             }
