@@ -1,12 +1,13 @@
-Google Analytics Measurement Protocol library for PHP
-===========================
+# Google Analytics Measurement Protocol library for PHP
 
-[![Latest Stable Version](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/version)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/8ctopus/php-ga-measurement-protocol/ci.yaml?branch=master)
-[![Total Downloads](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![PHP Version Require](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/require/php)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![License](https://poser.pugx.org/8ctopus/php-ga-measurement-protocol/license.svg)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![Documentation Status](https://readthedocs.org/projects/php-ga-measurement-protocol/badge/?version=latest)](http://php-ga-measurement-protocol.readthedocs.org/en/latest/)
+[![packagist](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/v)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![downloads](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![min php version](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/require/php)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![license](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/license)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
+[![tests](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml/badge.svg)](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml)
+![code coverage badge](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/coverage.svg)
+![lines of code](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/lines.svg)
+Lex is a lightweight template parser.
 
 This is a fork of the original no longer maintained project [https://github.com/theiconic/php-ga-measurement-protocol.git](https://github.com/theiconic/php-ga-measurement-protocol.git). There are no plans to add support for Google Analytics 4, this package is maintenance only for php 8.x support.
 
