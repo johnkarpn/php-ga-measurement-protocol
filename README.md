@@ -1,12 +1,12 @@
 # Google Analytics Measurement Protocol library for PHP
 
-[![packagist](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/v)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![downloads](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![min php version](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/require/php)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![license](http://poser.pugx.org/8ctopus/php-ga-measurement-protocol/license)](https://packagist.org/packages/8ctopus/php-ga-measurement-protocol)
-[![tests](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml/badge.svg)](https://github.com/8ctopus/php-ga-measurement-protocol/actions/workflows/tests.yml)
-![code coverage badge](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/coverage.svg)
-![lines of code](https://raw.githubusercontent.com/8ctopus/php-ga-measurement-protocol/image-data/lines.svg)
+[![packagist](http://poser.pugx.org/johnkarpn/php-ga-measurement-protocol/v)](https://packagist.org/packages/johnkarpn/php-ga-measurement-protocol)
+[![downloads](http://poser.pugx.org/johnkarpn/php-ga-measurement-protocol/downloads)](https://packagist.org/packages/johnkarpn/php-ga-measurement-protocol)
+[![min php version](http://poser.pugx.org/johnkarpn/php-ga-measurement-protocol/require/php)](https://packagist.org/packages/johnkarpn/php-ga-measurement-protocol)
+[![license](http://poser.pugx.org/johnkarpn/php-ga-measurement-protocol/license)](https://packagist.org/packages/johnkarpn/php-ga-measurement-protocol)
+[![tests](https://github.com/johnkarpn/php-ga-measurement-protocol/actions/workflows/tests.yml/badge.svg)](https://github.com/johnkarpn/php-ga-measurement-protocol/actions/workflows/tests.yml)
+![code coverage badge](https://raw.githubusercontent.com/johnkarpn/php-ga-measurement-protocol/image-data/coverage.svg)
+![lines of code](https://raw.githubusercontent.com/johnkarpn/php-ga-measurement-protocol/image-data/lines.svg)
 
 This is a fork of the original no longer maintained project [https://github.com/theiconic/php-ga-measurement-protocol.git](https://github.com/theiconic/php-ga-measurement-protocol.git). There are no plans to add support for Google Analytics 4, this package is maintenance only for php 8.x support.
 
@@ -35,7 +35,7 @@ Send data to Google Analytics from the server using PHP. This library fully impl
 
 Use Composer to install this package.
 
-    composer require 8ctopus/php-ga-measurement-protocol
+    composer require johnkarpn/php-ga-measurement-protocol
 
 ## Integrations
 
